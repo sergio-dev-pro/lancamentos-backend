@@ -20,7 +20,7 @@
   "scripts": {
     "server": "nodemon index.js",
     "start": "node index.js",
-    "heroku-postbuild": " npm run build"
+    "heroku-postbuild": " npm install && npm run build"
   },
   
   "engines": {
