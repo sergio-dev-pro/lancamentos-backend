@@ -20,9 +20,13 @@
   "scripts": {
     "server": "nodemon index.js",
     "start": "node index.js",
-    "heroku-postbuild": " npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
-  
+  "nodemonConfig": {
+    "ignore": [
+      "client/"
+    ]
+  },
   "engines": {
     "node": "12.14.1"
   }
